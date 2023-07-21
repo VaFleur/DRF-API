@@ -6,13 +6,13 @@ from django.contrib.auth.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username', 'first_name', 'last_name']
+        fields = ['id', 'username', 'first_name', 'last_name', 'posts', 'comments']
 
 
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ['id', 'title', 'category', 'description', 'body', 'created_by', 'created_at']
+        fields = ['id', 'title', 'category', 'description', 'body', 'created_by', 'created_at', 'comments']
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -24,4 +24,4 @@ class CommentSerializer(serializers.ModelSerializer):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['id', 'category_name', 'category_description']
+        fields = ['id', 'category_name', 'category_description', 'posts']

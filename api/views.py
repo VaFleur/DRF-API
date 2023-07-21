@@ -25,4 +25,4 @@ class CommentViewSet(viewsets.ModelViewSet):
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
-    serializer_class = CommentSerializer
+    serializer_class = CategorySerializer
