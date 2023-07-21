@@ -1,0 +1,1 @@
+[{"model": "api.category", "pk": 1, "fields": {"category_name": "SampleCategory1", "category_description": "SampleDesc1"}}, {"model": "api.category", "pk": 2, "fields": {"category_name": "SampleCategory2", "category_description": "SampleDesc2"}}, {"model": "api.category", "pk": 3, "fields": {"category_name": "SampleCategory3", "category_description": "SampleDesc3"}}]
